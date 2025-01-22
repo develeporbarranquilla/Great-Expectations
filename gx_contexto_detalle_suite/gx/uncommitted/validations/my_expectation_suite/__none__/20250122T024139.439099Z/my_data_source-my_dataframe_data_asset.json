@@ -1,0 +1,523 @@
+{
+  "id": null,
+  "meta": {
+    "active_batch_definition": {
+      "batch_identifiers": {
+        "dataframe": "<DATAFRAME>"
+      },
+      "data_asset_name": "my_dataframe_data_asset",
+      "data_connector_name": "fluent",
+      "datasource_name": "my_data_source"
+    },
+    "batch_markers": {
+      "ge_load_time": "20250122T024136.637381Z",
+      "pandas_data_fingerprint": "d239777ec74dadba651b07ab48873c08"
+    },
+    "batch_parameters": {
+      "dataframe": "<DATAFRAME>"
+    },
+    "batch_spec": {
+      "batch_data": "PandasDataFrame"
+    },
+    "checkpoint_id": null,
+    "great_expectations_version": "1.3.1",
+    "validation_id": "5025a9b6-c0ee-4dc5-abb2-ea119523b7d3"
+  },
+  "results": [
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "d8745c0d-daf2-478a-b828-5166d16a246e",
+        "kwargs": {
+          "batch_id": "my_data_source-my_dataframe_data_asset",
+          "column": "Proveedor"
+        },
+        "meta": {},
+        "type": "expect_column_values_to_not_be_null"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 244919,
+        "partial_unexpected_counts": [
+          {
+            "count": 1,
+            "value": null
+          },
+          {
+            "count": 1,
+            "value": null
+          },
+          {
+            "count": 1,
+            "value": null
+          },
+          {
+            "count": 1,
+            "value": null
+          },
+          {
+            "count": 1,
+            "value": null
+          },
+          {
+            "count": 1,
+            "value": null
+          },
+          {
+            "count": 1,
+            "value": null
+          },
+          {
+            "count": 1,
+            "value": null
+          },
+          {
+            "count": 1,
+            "value": null
+          },
+          {
+            "count": 1,
+            "value": null
+          },
+          {
+            "count": 1,
+            "value": null
+          },
+          {
+            "count": 1,
+            "value": null
+          },
+          {
+            "count": 1,
+            "value": null
+          },
+          {
+            "count": 1,
+            "value": null
+          },
+          {
+            "count": 1,
+            "value": null
+          },
+          {
+            "count": 1,
+            "value": null
+          },
+          {
+            "count": 1,
+            "value": null
+          },
+          {
+            "count": 1,
+            "value": null
+          },
+          {
+            "count": 1,
+            "value": null
+          },
+          {
+            "count": 1,
+            "value": null
+          }
+        ],
+        "partial_unexpected_index_list": [
+          51314,
+          51315,
+          51318,
+          51319,
+          51320,
+          51321,
+          51322,
+          51323,
+          51326,
+          51327,
+          51328,
+          51329,
+          51330,
+          51331,
+          51332,
+          51333,
+          51334,
+          51335,
+          51337,
+          51338
+        ],
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "unexpected_count": 156210,
+        "unexpected_percent": 63.780270211784305
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "0f6e6307-b761-4e86-901a-6b681e0d62ea",
+        "kwargs": {
+          "batch_id": "my_data_source-my_dataframe_data_asset",
+          "column": "Posici\u00f3n",
+          "type_": "int64"
+        },
+        "meta": {},
+        "type": "expect_column_values_to_be_of_type"
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "int64"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "f8ba739c-fde6-464e-a788-ccf6eae521d0",
+        "kwargs": {
+          "batch_id": "my_data_source-my_dataframe_data_asset",
+          "column": "Nombre del usuario",
+          "regex": "^[A-Za-z]+$"
+        },
+        "meta": {},
+        "type": "expect_column_values_to_match_regex"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 244919,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "f3448afc-9780-40ee-b898-cb24ecd3064e",
+        "kwargs": {
+          "batch_id": "my_data_source-my_dataframe_data_asset",
+          "column": "Centro",
+          "value_set": [
+            "VSA",
+            "BOG",
+            "CCA"
+          ]
+        },
+        "meta": {},
+        "type": "expect_column_distinct_values_to_be_in_set"
+      },
+      "meta": {},
+      "result": {
+        "details": {
+          "value_counts": [
+            {
+              "count": 33962,
+              "value": "BOG"
+            },
+            {
+              "count": 27519,
+              "value": "CCA"
+            },
+            {
+              "count": 38,
+              "value": "CCS"
+            },
+            {
+              "count": 16185,
+              "value": "CIMP"
+            },
+            {
+              "count": 6755,
+              "value": "CQO"
+            },
+            {
+              "count": 210,
+              "value": "CUP"
+            },
+            {
+              "count": 21415,
+              "value": "CUS"
+            },
+            {
+              "count": 24142,
+              "value": "CVA"
+            },
+            {
+              "count": 24896,
+              "value": "EPO"
+            },
+            {
+              "count": 4578,
+              "value": "GRA"
+            },
+            {
+              "count": 3896,
+              "value": "LBE"
+            },
+            {
+              "count": 33506,
+              "value": "MRF"
+            },
+            {
+              "count": 3671,
+              "value": "PAE"
+            },
+            {
+              "count": 14286,
+              "value": "PBE"
+            },
+            {
+              "count": 9,
+              "value": "REM"
+            },
+            {
+              "count": 21180,
+              "value": "TUN"
+            },
+            {
+              "count": 8671,
+              "value": "VSA"
+            }
+          ]
+        },
+        "observed_value": [
+          "BOG",
+          "CCA",
+          "CCS",
+          "CIMP",
+          "CQO",
+          "CUP",
+          "CUS",
+          "CVA",
+          "EPO",
+          "GRA",
+          "LBE",
+          "MRF",
+          "PAE",
+          "PBE",
+          "REM",
+          "TUN",
+          "VSA"
+        ]
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "a9d60f83-dc92-4456-b641-d098ee708092",
+        "kwargs": {
+          "batch_id": "my_data_source-my_dataframe_data_asset",
+          "column": "Fe.contabilizaci\u00f3n",
+          "strftime_format": "%d/%m/%Y"
+        },
+        "meta": {},
+        "type": "expect_column_values_to_match_strftime_format"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 244919,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "881efa82-e413-4eb8-ba43-fc31a7f1c938",
+        "kwargs": {
+          "batch_id": "my_data_source-my_dataframe_data_asset",
+          "column": "Documento material"
+        },
+        "meta": {},
+        "type": "expect_column_values_to_be_unique"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 244919,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [
+          {
+            "count": 2,
+            "value": 1000000716
+          },
+          {
+            "count": 2,
+            "value": 1000002157
+          },
+          {
+            "count": 2,
+            "value": 1000002822
+          },
+          {
+            "count": 2,
+            "value": 1000003551
+          },
+          {
+            "count": 1,
+            "value": 1000000520
+          },
+          {
+            "count": 1,
+            "value": 1000001351
+          },
+          {
+            "count": 1,
+            "value": 1000001663
+          },
+          {
+            "count": 1,
+            "value": 1000002781
+          },
+          {
+            "count": 1,
+            "value": 1000002819
+          },
+          {
+            "count": 1,
+            "value": 1000003197
+          },
+          {
+            "count": 1,
+            "value": 1000003612
+          },
+          {
+            "count": 1,
+            "value": 1000004235
+          },
+          {
+            "count": 1,
+            "value": 1000004356
+          },
+          {
+            "count": 1,
+            "value": 1000004615
+          },
+          {
+            "count": 1,
+            "value": 1000005122
+          },
+          {
+            "count": 1,
+            "value": 1000005769
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "partial_unexpected_list": [
+          1000004615,
+          1000000716,
+          1000000716,
+          1000001663,
+          1000004235,
+          1000002819,
+          1000002781,
+          1000005769,
+          1000003197,
+          1000003551,
+          1000002822,
+          1000002157,
+          1000001351,
+          1000000520,
+          1000003612,
+          1000005122,
+          1000004356,
+          1000003551,
+          1000002822,
+          1000002157
+        ],
+        "unexpected_count": 243965,
+        "unexpected_percent": 99.61048346596222,
+        "unexpected_percent_nonmissing": 99.61048346596222,
+        "unexpected_percent_total": 99.61048346596222
+      },
+      "success": false
+    }
+  ],
+  "statistics": {
+    "evaluated_expectations": 6,
+    "success_percent": 50.0,
+    "successful_expectations": 3,
+    "unsuccessful_expectations": 3
+  },
+  "success": false,
+  "suite_name": "my_expectation_suite",
+  "suite_parameters": {}
+}

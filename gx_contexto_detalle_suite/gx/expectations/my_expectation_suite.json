@@ -1,0 +1,66 @@
+{
+  "expectations": [
+    {
+      "id": "d8745c0d-daf2-478a-b828-5166d16a246e",
+      "kwargs": {
+        "column": "Proveedor"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "0f6e6307-b761-4e86-901a-6b681e0d62ea",
+      "kwargs": {
+        "column": "Posici\u00f3n",
+        "type_": "int64"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_of_type"
+    },
+    {
+      "id": "f8ba739c-fde6-464e-a788-ccf6eae521d0",
+      "kwargs": {
+        "column": "Nombre del usuario",
+        "regex": "^[A-Za-z]+$"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_match_regex"
+    },
+    {
+      "id": "f3448afc-9780-40ee-b898-cb24ecd3064e",
+      "kwargs": {
+        "column": "Centro",
+        "value_set": [
+          "VSA",
+          "BOG",
+          "CCA"
+        ]
+      },
+      "meta": {},
+      "type": "expect_column_distinct_values_to_be_in_set"
+    },
+    {
+      "id": "a9d60f83-dc92-4456-b641-d098ee708092",
+      "kwargs": {
+        "column": "Fe.contabilizaci\u00f3n",
+        "strftime_format": "%d/%m/%Y"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_match_strftime_format"
+    },
+    {
+      "id": "881efa82-e413-4eb8-ba43-fc31a7f1c938",
+      "kwargs": {
+        "column": "Documento material"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_unique"
+    }
+  ],
+  "id": "e005ca69-66bc-4c3f-937c-944f69bb7897",
+  "meta": {
+    "great_expectations_version": "1.3.1"
+  },
+  "name": "my_expectation_suite",
+  "notes": null
+}

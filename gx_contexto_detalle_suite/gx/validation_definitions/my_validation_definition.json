@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "6bb8004a-0006-45bb-aa83-2dcefaeb4284",
+      "name": "my_dataframe_data_asset"
+    },
+    "batch_definition": {
+      "id": "af198cb2-5260-40fd-afbf-5ae3370a5f2b",
+      "name": "my_batch_definition"
+    },
+    "datasource": {
+      "id": "ec37c4d7-6c5f-4f15-9846-be2f182bb018",
+      "name": "my_data_source"
+    }
+  },
+  "id": "5025a9b6-c0ee-4dc5-abb2-ea119523b7d3",
+  "name": "my_validation_definition",
+  "suite": {
+    "id": "e005ca69-66bc-4c3f-937c-944f69bb7897",
+    "name": "my_expectation_suite"
+  }
+}
